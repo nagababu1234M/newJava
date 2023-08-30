@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\APIGateWay"/>
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\VaccinationCenter"/>
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\examples\spring-boot-3-rest-api-example-master\spring-boot-3-rest-api-example-master"/>
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\spring-boot-3-rest-api-example-master\spring-boot-3-rest-api-example-master"/>
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\spring-boot-3-rest-api-example-master"/>
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\springboot-blog-rest-api-main"/>
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\javatest\javatest"/>
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\test_demo\demo_test"/>
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\test_demo"/>
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\demo (1)"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\demoSpring\demoSpring\pom.xml"/>
+			<item value="C:\Users\Nagababu.Mulukuri\Downloads\springDemo\springDemo\src\main\java\com\springcurd\springDemo\EmployeeController.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="demo_spring_core.SpringCore_Demo"/>
+			<item value="demo_spring_core.DemoSpringCore"/>
+			<item value="sampleSpringCore.app"/>
+		</list>
+		<list key="groupId">
+			<item value="demo_spring_core"/>
+			<item value="sampleSpringCore"/>
+		</list>
+		<list key="artifactId">
+			<item value="SpringCore_Demo"/>
+			<item value="DemoSpringCore"/>
+			<item value="app"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

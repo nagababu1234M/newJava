@@ -1,0 +1,10 @@
+package Inheritence;
+
+public class CustomeClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

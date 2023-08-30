@@ -1,0 +1,12 @@
+package Inheritence;
+
+import java.util.function.BiPredicate;
+
+public class FunctionalInterfaces_all {
+	public static void main(String []args) {
+		BiPredicate<Integer,String> bipredicate=(number,string)->{
+			return number>5 && string.length()> 10;
+		}
+	}
+
+}

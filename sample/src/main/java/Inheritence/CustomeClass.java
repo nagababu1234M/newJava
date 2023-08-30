@@ -1,0 +1,15 @@
+package Inheritence;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class CustomeClass {
+
+	public static void main(String[] args) {
+		List<String> cources1=Arrays.asList("nagababu","Komal");
+		List<List<String>> cources=List.of(cources1);
+		
+		
+	}
+
+}

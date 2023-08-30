@@ -1,0 +1,6 @@
+1692083501368	Extract local variable 'sumofReduce'
+1692087142652	Extract local variable 'exampleMapMethod'
+1692087352112	Extract method 'functionBeha'
+1692094436320	Extract local variable 'PredicatorForloop'
+1692094719132	Extract method 'mapAndRefactor'
+1692208543873	Extract method 'ComparingByNofStudents'

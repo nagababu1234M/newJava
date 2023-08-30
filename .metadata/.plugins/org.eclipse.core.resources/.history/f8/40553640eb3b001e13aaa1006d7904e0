@@ -1,0 +1,10 @@
+package Inheritence;
+
+import java.util.*;
+
+public class streams_method_References {
+
+	public static void main(String args[]) {
+		List<String> cources=new List("ashok","Ahojk","Main","rajamoHan","Voidrenage","tesla");
+	}
+}

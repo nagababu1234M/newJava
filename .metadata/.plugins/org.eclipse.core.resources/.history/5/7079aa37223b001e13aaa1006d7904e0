@@ -1,0 +1,116 @@
+package Inheritence;
+
+import java.util.*;
+import java.util.function.Consumer;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class functional_1 {
+
+	private static void print(int n) {
+		// TODO Auto-generated method stub
+		System.out.println(n);
+	}	
+	
+	private static boolean Evennumbers(int n) {
+		// TODO Auto-generated method stub
+		return n%2==0;
+	}
+
+	//reduce example
+	private static int sumOfNumbers(List<Integer> numbers) {
+	    return  numbers.stream()
+	    		//.reduce(0,functional_1::sum); // o/p: 138
+         		//.reduce(0,(x,y) -> x+y); // o/p: 138
+	    		//.reduce(0,(x,y)->x); //o/p: 0 .bcs of deault value is 0. every time checks with 0
+	    		//.reduce(0,(x,y)->y); //o/p: 25 .bcs loop  every time checks with next value only.
+
+	    		//.reduce(0, Integer::sum);
+	    		//sum of square root of the array
+	    		//.map(x->x*x).reduce(0,(x,y)-> x+y);
+	    		//sum of qubes of the list
+	    		//.map(x->x*x*x).reduce(0,(x,y)-> x+y);
+	    		//sum of odd numbers
+	    		.filter(x-> x%2==1).reduce(0,(x,y)-> x+y);
+		}
+		private static int sum(int a,int b) {
+			System.out.println(a+" "+b); 
+			//	0 1
+//			1 9
+//			10 89
+//			99 7
+//			106 8
+//			114 24
+//			138
+			return a+b;
+		}
+    //////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////
+	public static void main(String args[])
+	{
+
+		// Creating a List using Syntax 1
+		List<Integer> list1 = Stream.of(1, 2, 3)
+								.collect(Collectors.toList());
+		
+		//Practice starts here
+		List<Integer> li=new ArrayList<>();
+		li.add(1);
+		li.add(9);
+		li.add(89);
+		li.add(7);
+		li.add(8);
+		li.add(24);
+		//li.stream().forEach(functional_1::print);
+    	//li.stream().filter(functional_1::Evennumbers).forEach(System.out::println);
+		li.stream().filter(number-> number%2==0).forEach(System.out::println);
+		
+		//Example2: string ends with i
+		List<String> li2=new ArrayList<>();
+		li2.add("ashok");
+		li2.add("nagababu");
+		li2.add("satya");
+		li2.add("rani");
+		li2.add("kumari");
+		//ends with i
+		li2.stream().filter(ch-> ch.endsWith("i")).forEach(System.out::println);
+		//equeals method
+		li2.stream().filter(ch-> ch.equals("rani")).forEach(System.out::println);
+		//morethan 4 character
+		System.out.println("morethan 4 character "+li2.stream().filter(ch-> ch.length()>5).collect(Collectors.toList()));
+		//print square root of 
+		System.out.println("print square root of  "+li.stream().filter(ch-> ch%2==0).map(num-> num*2).collect(Collectors.toList()));
+		// print single value for example sum of values of an collection
+		System.out.println("single value for example sum "+sumOfNumbers(li));
+		//soring string of array by alphabetical order
+		System.out.println("alphabetical order "+li2.stream().sorted().collect(Collectors.toList()));
+		//custome algorithm soring by size
+		System.out.println("alphabetical order custome "+li2.stream().sorted(Comparator.naturalOrder()).collect(Collectors.toList()));
+		System.out.println("alphabetical order custome reverse "+li2.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
+		// Creating a List using Syntax 2
+		List<Integer> list2 = Stream
+								.of(3, 2, 1)
+								.collect(
+									Collectors
+										.toCollection(ArrayList::new));
+
+		// Printing the list
+		System.out.println("List using Syntax 2: "
+						+ list2.toString());
+
+		// Creating a List using Syntax 3
+		List<Integer> list3 = Stream
+								.of(1, 2, 3, 4)
+								.collect(
+									Collectors
+										.collectingAndThen(
+											Collectors.toList(),
+											Collections::unmodifiableList));
+
+		// Printing the list
+		System.out.println("List using Syntax 3: "
+						+ list3.toString());
+	}
+}
+

@@ -1,0 +1,6 @@
+1689747532072	Extract local variable 'evenpredicateNumber'
+1689748234898	Extract local variable 'MapfunctionalData'
+1689749213498	Extract local variable 'evenPredicate'
+1689749230500	Extract local variable 'oddPredicate'
+1689749497671	Extract method 'FiletrAndPrint'
+1689779640481	Extract method 'extracted'

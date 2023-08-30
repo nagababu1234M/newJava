@@ -1,0 +1,10 @@
+package Inheritence;
+
+import java.util.*;
+
+public class BehaverioalParametearization {
+	public static void main(String args[]) {
+		List<Integer> li=new List.of(cc,asc);
+	}
+
+}

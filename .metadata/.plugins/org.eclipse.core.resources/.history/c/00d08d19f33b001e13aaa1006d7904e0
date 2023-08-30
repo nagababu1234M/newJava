@@ -1,0 +1,20 @@
+package Inheritence;
+
+import java.util.List;
+
+public class streams_method_References {
+
+	public static void main(String args[]) {
+		List<String> cources= List.of("ashok","Ahojk","Main","rajamoHan","Voidrenage","tesla");
+		cources.stream()
+		.filter(streams_method_References::checkfirstLetterUpOrLow)
+		.forEach(System.out::println);
+	
+	}
+	public static boolean checkfirstLetterUpOrLow(String str){
+		char[] c=str.toCharArray();
+		System.out.println("cccc "+ c);
+		return Character.isUpperCase(str.charAt(0));
+	}
+
+}

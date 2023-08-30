@@ -1,0 +1,22 @@
+package com.springcurd.springDemo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class EmployeeController {
+	
+	@Autowired
+	employeeRepo repo;
+  
+	@RequestMapping("/")
+	public String employee() {
+		return "employee.jsp";
+	}
+	
+	@RequestMapping("/addEmployee")
+	public String addemployee(employee em) {
+		return "employee.jsp";
+	}
+}

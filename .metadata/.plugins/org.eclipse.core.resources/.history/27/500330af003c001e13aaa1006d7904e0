@@ -1,0 +1,41 @@
+package Inheritence;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class streams_method_References {
+
+	public static void main(String args[]) {
+		List<String> cources= List.of("ashok","Ahojk","Main","rajamoHan","Voidrenage","tesla");
+//get starts with Capital letters 
+		cources.stream()
+		.filter(streams_method_References::checkfirstLetterUpOrLow)
+		.forEach(System.out::println);
+//Get each ASCII into char  code
+	List<String> acsiiData=	cources.stream().map(streams_method_References::convertIntoASIICode).collect(Collectors.toList());
+//Get each Char into ASCII  code
+	acsiiData.stream().map(streams_method_References::convertAsciIntoSTRCode).forEach(System.out::println);
+
+};
+	public static boolean checkfirstLetterUpOrLow(String str){
+        char s=str.charAt(0);
+		System.out.println(Character.isUpperCase(s));
+		return Character.isUpperCase(str.charAt(0));
+	}
+	private static String convertIntoASIICode(String string1) {
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<string1.length();i++) {
+			sb.append((int)string1.charAt(i));
+			sb.append(" ");
+		}
+		return sb.toString();
+	}
+	private static String convertAsciIntoSTRCode(String string1) {
+		String sb="";
+		for(int i=0;i<string1.length();i++) {
+			sb=Character.toString((char)i);
+		}
+		return sb;
+	}
+
+}

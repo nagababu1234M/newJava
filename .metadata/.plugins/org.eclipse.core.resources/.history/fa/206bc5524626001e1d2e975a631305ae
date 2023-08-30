@@ -1,0 +1,65 @@
+package Inheritence;
+
+import java.util.List;
+import java.util.function.BiPredicate;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import java.util.function.UnaryOperator;
+
+public class functional_2 {
+
+	public static void main(String[] args) {
+
+		List<Integer> li=List.of(2,6,9,29,43,18,5,26);
+		Predicate<Integer> evenpredicateNumber = x->x%2==0;
+		
+		//suuplier interface not takes any values but return something
+//		Supplier<Integer> ramdomNumber=()->2;
+//		System.out.println(" Supplier Ramdom number"+ramdomNumber.get());
+		Supplier<Integer> ramdomNumber=()->{			
+			return (1000);
+		};
+		System.out.println("Supplier Ramdom number "+ramdomNumber.get());
+		//unaryoperator takes 
+		UnaryOperator<Integer> unareyoperator=(x)->3*x;
+		System.out.println("UnareyOperator "+ unareyoperator.apply(10));
+		
+		BiPredicate<Integer,String> biPredicate=(number,string)->{
+			return number <10 && string.length()<5;
+		};
+		System.out.println("biPredicate "+biPredicate.test(9, "hishaiisacusac") );
+
+
+//		
+		Predicate<Integer> evenpredicateNumber2 = new Predicate<Integer>() {
+
+			@Override
+			public boolean test(Integer x) {
+				// TODO Auto-generated method stub
+				return x%2==0;
+			}
+			
+		};
+
+		Function<Integer, Integer> MapfunctionalData =x->x*x;
+		//functional can access two parameters but return any type string or integer
+		//Function<Integer, String> MapfunctionalData3 =x->x+" ";
+
+		
+		Function<Integer, Integer> MapfunctionalData2 =new Function<Integer, Integer>(){
+
+			@Override
+			public Integer apply(Integer x) {
+				// TODO Auto-generated method stub
+				return x*x;
+			}
+			
+		} ;
+		li.stream()
+		.filter(evenpredicateNumber)
+		.map(MapfunctionalData)
+		.forEach(System.out::println);
+	}
+
+}

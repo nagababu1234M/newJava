@@ -1,0 +1,27 @@
+package Inheritence;
+
+import java.util.List;
+
+public class streams_method_References {
+
+	public static void main(String args[]) {
+		List<String> cources= List.of("ashok","Ahojk","Main","rajamoHan","Voidrenage","tesla");
+//get starts with Capital letters 
+		cources.stream()
+		.filter(streams_method_References::checkfirstLetterUpOrLow)
+		.forEach(System.out::println);
+//Get each char into ASCII code
+		cources.stream().map(streams_method_References::convertIntoASIICode).forEach(System.out::println);
+
+	};
+	public static boolean checkfirstLetterUpOrLow(String str){
+        char s=str.charAt(0);
+		System.out.println(Character.isUpperCase(s));
+		return Character.isUpperCase(str.charAt(0));
+	}
+	private static int convertIntoASIICode(String string1) {
+		StringBuilder sb=new StringBuilder();
+		return 21;
+	}
+
+}

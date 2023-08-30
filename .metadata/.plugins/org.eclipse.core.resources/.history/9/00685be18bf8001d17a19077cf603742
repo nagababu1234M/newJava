@@ -1,0 +1,18 @@
+package com.springcurd.springDemo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class EmployeeController {
+  
+	@RequestMapping("/")
+	public String employee() {
+		return "employee.jsp";
+	}
+	
+	@RequestMapping("/addEmployee")
+	public String addemployee() {
+		return "employee.jsp";
+	}
+}

@@ -1,0 +1,44 @@
+package Inheritence;
+
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.function.BinaryOperator;
+
+public class practiceLogical {
+
+	private static boolean isEven(int number) {
+		return number%2==0;
+	}
+	private static int addAllelements(int number1,int number) {
+		return number%2;
+	}
+	public static void main(String[] args) {
+		int[] li2= {1,2,5,8};
+		String name="nagababu";
+		char itmes[]=name.toCharArray();
+		char copy = 0;
+		for(int i = 0; i <itmes.length; i++) {
+			if(itmes[i]==copy) {
+								
+			}
+		}
+
+		List<Integer> li=  List.of(1,2,3,4,56,7,2);
+		List<String> li3=  List.of("a","b","c","d","m","n");
+		System.out.println();
+		li.stream().filter(practiceLogical::isEven).forEach(System.out::println);
+		System.out.print(Arrays.stream(li2).reduce(Integer::max));
+		BinaryOperator<Integer> sumofReduce = Integer::sum;
+		BinaryOperator<Integer> sumofReduce2 = new BinaryOperator<Integer>() {
+
+			@Override
+			public Integer apply(Integer t, Integer u) {
+				// TODO Auto-generated method stub
+				return t+u;
+			}
+			
+		}
+		System.out.print(li.stream().reduce(0,sumofReduce));
+	}
+
+}

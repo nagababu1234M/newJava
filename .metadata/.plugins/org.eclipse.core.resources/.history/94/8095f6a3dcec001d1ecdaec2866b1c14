@@ -1,0 +1,8 @@
+package ne_test;
+
+	public class Parent{
+		public Integer Parent() {
+			return 1+2
+		}
+	}
+

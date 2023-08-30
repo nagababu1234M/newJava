@@ -1,0 +1,24 @@
+package Inheritence;
+
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class BehaverioalParametearization {
+	public static void main(String args[]) {
+		List<Integer> li= List.of(1,2,5,6,2,5,9,7);
+		
+		//basic examples
+//		Function<Integer, Integer> exampleMapMethod = x->x*x;
+		//passing data(li), function as a perameter. 
+		//i.e passing behavior of the function x->x*x
+		functionBeha(li, x->x*x);
+		
+	}li.
+
+	private static void functionBeha(List<Integer> li, Function<Integer, Integer> exampleMapMethod) {
+		li.stream().map(exampleMapMethod).forEach(System.out::println);
+	}
+	
+
+}

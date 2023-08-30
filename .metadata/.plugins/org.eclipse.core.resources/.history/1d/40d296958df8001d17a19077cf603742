@@ -1,0 +1,5 @@
+package com.springcurd.springDemo;
+
+public interface employeeRepo {
+
+}

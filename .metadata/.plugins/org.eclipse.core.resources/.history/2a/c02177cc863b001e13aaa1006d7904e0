@@ -1,0 +1,8 @@
+package Inheritence;
+
+public class FunctionalInterfaces_all {
+	public static void main(String []args) {
+		
+	}
+
+}

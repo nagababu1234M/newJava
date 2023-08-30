@@ -1,0 +1,43 @@
+package com.example.CitizenServices_MS;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Citizen {
+	@Id
+	@GeneratedValue(stragety=GenerationType.AUTO)
+ private int id;
+ private String name;
+ private String vaccinationCenter;
+ 
+public Citizen(int id, String name, String vaccinationCenter) {
+	super();
+	this.id = id;
+	this.name = name;
+	this.vaccinationCenter = vaccinationCenter;
+}
+@Override
+public String toString() {
+	return "Citizen [id=" + id + ", name=" + name + ", vaccinationCenter=" + vaccinationCenter + "]";
+}
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getVaccinationCenter() {
+	return vaccinationCenter;
+}
+public void setVaccinationCenter(String vaccinationCenter) {
+	this.vaccinationCenter = vaccinationCenter;
+}
+}
